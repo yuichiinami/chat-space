@@ -152,21 +152,22 @@
 .new-message {
   display: flex;
   height: 50px;
-  position: relative;
 
   .form {
     display: flex;
+    width: 1060px;
     
     .new_message {
       background-color: #ffffff;
       margin: auto;
+      width: calc(100% - 115px);
     }
     
     .input-box {
       width: 100%;
       color: #999999;
       position: relative;
-      display: flex;
+      
 
       &__text {
         height: 50px;
@@ -195,7 +196,7 @@
       color: white;
       display: flex;
       justify-content: center;
-      align-items: center;
+      
       .form-image{
         input{
           display: none;
