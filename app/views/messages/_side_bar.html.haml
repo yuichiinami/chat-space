@@ -1,0 +1,20 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      %p.top-items__name
+        = current_user.name
+      %ul.top-items__icons
+        %li.top-items__icons__edit-user
+          = link_to "#" do
+            = icon('fas', 'pen-square', class: 'icon')
+            %span<>
+        %li.top-items__icons__new-group
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
+            %span<>
+  .side-bar__group-list
+    .group-items
+      %p.group-items__name
+        techcamp
+      %p.group-items__message
+        まだメッセージがありません

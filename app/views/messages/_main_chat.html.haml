@@ -1,0 +1,36 @@
+.chat-main
+  .chat-main__group-info
+    .info-name
+      test
+      %ul.info-member
+        %li.info-member__name
+        Member : yuichi
+    .info-edit
+      Edit
+  .chat-main__message-list
+    .message-lists
+      .message-list
+        %p.message-list__name
+          yuichi
+        %p.message-list__date
+          2020/6/21(Sun) 00:00:00
+      %p.message-comment
+        おはよう!
+      
+      .message-list
+        %p.message-list__name
+          yuichi
+        %p.message-list__date
+          2020/6/21(Sun) 01:00:00
+      %p.message-comment
+        今日は夜から雨
+  .chat-main__message-form
+    .new-message
+      .form
+        %form.new_message
+          .input-box
+            %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+            %label{class: "input-box__image"}
+              = icon('fas', 'image')
+              %input{type: "file", class: "input-box__image__file"}
+        %input{type:"submit", value:"Send", class: "submit-btn"}
