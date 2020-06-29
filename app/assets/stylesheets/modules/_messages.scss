@@ -60,6 +60,10 @@
 
 .group-items {
   height: 65px;
+  .group-item {
+    text-decoration: none;
+    color: #ffffff;
+  }
   &__name {
     font-size: 15px;
     margin-bottom: 5px;
